@@ -6,7 +6,7 @@
 /*   By: gypark <gypark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 18:43:09 by gypark            #+#    #+#             */
-/*   Updated: 2021/02/15 18:54:04 by gypark           ###   ########.fr       */
+/*   Updated: 2021/02/15 18:59:37 by gypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	inner_fnc(void *param)
 {
 	x += 30;
 	*(int*)param *= 5;
+	printf("inner_fnc on_subprocess x = %d, param = %d\n", x, *(int*)param);
 	exit(0);
 }
 
@@ -28,6 +29,7 @@ void	inner_fnc2(void *param)
 {
 	x += 30;
 	*(int*)param *= 5;
+	printf("inner_fnc2 on_subprocess x = %d, param = %d\n", x, *(int*)param);
 	exit(42);
 }
 
