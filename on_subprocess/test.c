@@ -6,7 +6,7 @@
 /*   By: gypark <gypark@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 18:43:09 by gypark            #+#    #+#             */
-/*   Updated: 2021/02/15 18:59:37 by gypark           ###   ########.fr       */
+/*   Updated: 2021/02/15 19:01:04 by gypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,9 @@ int		main(void)
 }
 
 /*
+inner_fnc on_subprocess x = 72, param = -5
 origin process : x = 42, param = -1, status = 0
+inner_fnc2 on_subprocess x = 72, param = -5
 origin process : x = 42, param = -1, status = 42
 origin process : x = 72, param = -5, status = 42
 */
